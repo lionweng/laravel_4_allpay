@@ -52,9 +52,6 @@ return array(
 
 
 # Samples
-
-###
-
 --------
 Allpay::instance()->Send['ReturnURL'] = "<<收到付款完成通知的伺服器端網址>>";
 Allpay::instance()->Send['ClientBackURL'] = "<<歐付寶返回按鈕導向的瀏覽器端網址>>";
@@ -65,8 +62,9 @@ array_push(Allpay::instance()->Send['Items'], array('Name' => "<<產品C>>", 'Pr
 'Currency' => "<<幣別>>", 'Quantity' => (int) "<<數量>>", 'URL' => "<<產品說明位址>>"));
 
 Allpay::instance()->CheckOut();
-
+--------
 
 #Advanced
-
+--------
 Allpay::instance() -> Allpay::i()
+--------
