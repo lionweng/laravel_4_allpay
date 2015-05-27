@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Allpay Service Provider for Laravel 4.",
     "keywords": ["laravel","allpay"],
-    "homepage": "https://github.com/lionweng/laravel_4_allpay",
+    "homepage": "https://bitbucket.org/lionweng/laravel_4_allpay",
     "license": "MIT",
     "authors": [
         {
