@@ -51,7 +51,7 @@ class Manager{
         $this->allInOne->Send['MerchantTradeNo'] = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);;
         $this->allInOne->Send['MerchantTradeDate'] = date('Y/m/d H:i:s');
         $this->allInOne->Send['TotalAmount'] = (int) "1000";
-        $this->allInOne->Send['TradeDesc'] = "這是一筆測試交易";
+        $this->allInOne->Send['TradeDesc'] = "測試交易";
         array_push($this->allInOne->Send['Items'], array('Name' => "產品A", 'Price' => (int)"1000",
         'Currency' => "元", 'Quantity' => (int) "1", 'URL' => "localhost"));
     }
