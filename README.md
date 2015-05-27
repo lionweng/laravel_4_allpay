@@ -22,7 +22,7 @@ app/config/app.php -> providers:
 'providers' => array(
 	// ...
 
-    'Howtomakeaturn\Allpay\AllpayServiceProvider',
+    'Lionweng\Allpay\AllpayServiceProvider',
 
 )
 --------
@@ -32,7 +32,7 @@ app/config/app.php -> aliases:
 --------
 'aliases' => array(
 	// ...
-    'Allpay' => 'Howtomakeaturn\Allpay\Facade\Allpay',
+    'Allpay' => 'Lionweng\Allpay\Facade\Allpay',
 )
 --------
 
