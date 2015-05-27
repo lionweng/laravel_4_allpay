@@ -32,10 +32,10 @@ class Manager{
 
     public function loadConfigs()
     {
-        $this->allInOne->ServiceURL = Config::get('allpay-4-laravel.ServiceURL');
-        $this->allInOne->HashKey = Config::get('allpay-4-laravel.HashKey');
-        $this->allInOne->HashIV = Config::get('allpay-4-laravel.HashIV');
-        $this->allInOne->MerchantID = Config::get('allpay-4-laravel.MerchantID');
+        $this->allInOne->ServiceURL = Config::get('laravel_4_allpay.ServiceURL');
+        $this->allInOne->HashKey = Config::get('laravel_4_allpay.HashKey');
+        $this->allInOne->HashIV = Config::get('laravel_4_allpay.HashIV');
+        $this->allInOne->MerchantID = Config::get('laravel_4_allpay.MerchantID');
     }
 
     public function loadTestingConfigs()
@@ -50,9 +50,9 @@ class Manager{
         $this->allInOne->Send['ClientBackURL'] = "localhost";
         $this->allInOne->Send['MerchantTradeNo'] = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 20);;
         $this->allInOne->Send['MerchantTradeDate'] = date('Y/m/d H:i:s');
-        $this->allInOne->Send['TotalAmount'] = (int) "1330";
+        $this->allInOne->Send['TotalAmount'] = (int) "1000";
         $this->allInOne->Send['TradeDesc'] = "這是一筆測試交易";
-        array_push($this->allInOne->Send['Items'], array('Name' => "測試產品", 'Price' => (int)"1330",
+        array_push($this->allInOne->Send['Items'], array('Name' => "產品A", 'Price' => (int)"1000",
         'Currency' => "元", 'Quantity' => (int) "1", 'URL' => "localhost"));
     }
 
